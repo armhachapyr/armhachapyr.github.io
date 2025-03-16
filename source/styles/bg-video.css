@@ -1,0 +1,77 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Прозрачный фон */
+    z-index: 3;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s ease; /* Плавное скрытие/появление */
+}
+
+.bgvideo {
+    color: aquamarine;
+    height: 100vh; /* Задаем высоту 100% от высоты экрана */
+    width: 100%; /* Ширина на весь экран */
+    position: relative;
+    display: flex;
+}
+
+.bgvideo video {
+    height: 90vh; /* Высота видео на весь экран */
+    width: 100%; /* Ширина видео на весь экран */
+     /* Закрепляем видео на экране */
+    top: 0; /* Находимся на верхней части экрана */
+    left: 0; /* Находимся слева */
+    
+    object-fit: cover; /* Чтобы видео не искажалось, но заполнило весь экран */
+    z-index: -1; /* Видео должно быть под контентом */
+    border-bottom-left-radius: 7%; /* Округление нижнего левого угла */
+    border-bottom-right-radius: 7%;
+}
+.bgvideo video.rounded-bottom {
+    border-bottom-left-radius: 10%; /* Округление нижнего левого угла */
+    border-bottom-right-radius: 10%; /* Округление нижнего правого угла */
+}
+
+.deo-text {
+    color: aquamarine;
+    z-index: 2;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Прозрачный фон */
+    z-index: 3;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Логотип слева, меню справа */
+    align-items: center;
+}
+.navbar a{
+    font-size: 1.5em;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Логотип слева, меню справа */
+    width: 100%;
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    padding: 10px 0;
+} */
+.brand {
+    width: 60px !important;  /* Принудительное применение стиля */
+}

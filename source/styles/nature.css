@@ -1,0 +1,29 @@
+*{
+    font-size: 20px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+
+.imagenat {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 60px 60px;
+}
+
+.natText {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 70px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+.natText p{
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+}

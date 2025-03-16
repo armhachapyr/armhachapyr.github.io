@@ -1,0 +1,22 @@
+.horVirap{
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+.imgGen{
+    display: inline;
+    
+}
+.imgVirap{
+    margin-top: 20px;
+}
+.imgGen p{
+    font-size: 16px;
+}
+.textVirap{
+    width: 400%;
+}

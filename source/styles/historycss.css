@@ -1,0 +1,219 @@
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    /* font-family: 'Geologica', sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+/* Обновляем стили для изображений и текста */
+.imageHistory .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imageHis {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 50px 50px;
+}
+
+.textHis {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+.textHis p {
+    font-size: 80px;
+    color: rgb(246, 246, 246);
+}
+
+.BazText p {
+    color: black;
+}
+.BazText23 p {
+    color: black;
+}
+
+
+.Bala {
+    margin-top: 50px;
+}
+
+.Baz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    flex-wrap: wrap; /* Обеспечивает корректное поведение на маленьких экранах */
+}
+
+
+.BazText {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 55%;
+} 
+.BazText23{
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 48%;
+}
+
+.Baz img {
+    width: 49%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.BazText p {
+    font-size: 20px;
+}
+
+.imagesHiss img {
+    margin-left: 45px;
+    width: 750px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imgarm img {
+    margin-right: 30px;
+    width: 710px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Адаптация для планшетов (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    .textHis {
+        font-size: 50px;
+        padding: 15px 25px;
+        top: 75%; /* Немного подняли */
+    }
+
+    .textHis p {
+        font-size: 30px;
+    }
+
+    .Baz {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .BazText {
+        max-width: 150%;
+        margin-left: 0;
+        padding: 20px;
+    }
+    .BazText23 {
+        max-width: 150%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .Baz img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .imagesHiss img,
+    .imgarm img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    .card-body h2 {
+        font-size: 24px; /* Уменьшаем размер текста в карточках */
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+}
+
+/* Адаптация для мобильных устройств (ширина экрана до 576px) */
+@media (max-width: 576px) {
+    .textHis {
+        font-size: 40px;
+        top: 65%;
+        padding: 10px 20px;
+    }
+
+    .textHis p {
+        font-size: 22px;
+    }
+
+    .Baz {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .BazText {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+    .BazText23 {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    .Baz img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .imagesHiss img,
+    .imgarm img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Карточки на мобильных */
+    .card-body h2 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 12px;
+    }
+}

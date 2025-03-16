@@ -1,0 +1,166 @@
+*{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+body{
+    background-color: #ffffff
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+.textVirap>p{
+    font-family: Roboto, serif;
+    color: rgb(124, 81, 81);
+}
+h2{
+    font-family: Geologica, serif;
+    color: #df4b4b;
+}
+
+.imagenat {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 60px 60px;
+}
+
+.natText {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 70px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+.natText p{
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+}
+.horVirap{
+    margin-top: 60px;
+    padding: 60px;
+    padding-left: 350px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: center;
+    
+}
+.imgVirap{
+    
+    border-radius: 10px 10px 10px 10px;
+}
+h2 {
+    animation: fadeIn 1.5s ease-out;
+}
+.textVirap{
+    margin-right: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #032841; /* Синий цвет для заголовков */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #000000; /* Тусклый серый для обычного текста */
+    line-height: 1.6;
+}
+@media (max-width: 576px) {
+    .horVirap {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px; /* Ещё больше уменьшаем отступы */
+        margin-top: 10px;
+    }
+
+    .textVirap {
+        font-size: 18px; /* Меньший размер шрифта */
+        padding: 5px;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .imgVirap {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 22px; /* Ещё меньше размер заголовка */
+    }
+
+    p {
+        font-size: 14px; /* Меньше шрифт для текста */
+        line-height: 1.4; /* Комфортное расстояние между строками */
+    }
+
+    .imagenat {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 60px 60px;
+    }
+
+    .natText {
+        font-size: 40px; /* Маленький размер текста для маленьких экранов */
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .horVirap {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Уменьшаем отступы для меньших экранов */
+        margin-top: 20px; /* Можно уменьшить отступ сверху */
+    }
+
+    .textVirap {
+        font-size: 20px; /* Уменьшаем размер шрифта для текстов */
+        padding: 10px;
+        margin: 0;
+        max-width: 100%; /* Убираем лишние отступы */
+    }
+
+    .imgVirap {
+        width: 100%; /* Убедитесь, что изображения адаптируются */
+        max-width: 100%; /* Убираем лишние отступы по ширине */
+        height: auto; /* Соотношение сторон сохраняется */
+        margin-bottom: 10px; /* Для лучшего визуального восприятия */
+    }
+
+    h2 {
+        font-size: 24px; /* Уменьшаем размер заголовка */
+    }
+
+    p {
+        font-size: 16px; /* Уменьшаем размер текста */
+        line-height: 1.5; /* Улучшение читаемости */
+    }
+
+    .imagenat {
+        width: 100%; /* Ставим картинку на всю ширину */
+        height: auto;
+        border-radius: 0 0 60px 60px;
+    }
+
+    /* Убираем padding и margin, если они вызывают проблему */
+    .natText {
+        font-size: 50px; /* Уменьшаем размер текста в блоке */
+        padding: 0 10px;
+    }
+}

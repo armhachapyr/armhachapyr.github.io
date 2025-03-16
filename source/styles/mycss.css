@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Geologica&display=swap');
+
+*{
+    font-size: 20px;
+}
+
+body{
+    
+    background:#0D1522
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
+    z-index: 3;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Логотип слева, меню справа */
+    align-items: center;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Логотип слева, меню справа */
+    width: 100%;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+.nav-item{
+    padding-left: 2em;
+}
+.navbar-nav .nav-link.active{
+    color: rgb(168, 225, 235);
+}
+
+.navbar-toggler{
+    background-color: rgb(205, 242, 245);
+}
+
+.sidebar{
+    color: aquamarine;
+    background: linear-gradient(270deg, #000000 0%, #000000 94%);
+}
+
+.card{
+    margin-right: 2em;
+    color: rgb(255, 255, 255);
+    background-color: #1b273a;
+    height: 500px;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+}
+
+#doost{
+    font-size: 28px;
+}
+
+.card img{
+    width: 400px;
+}
+.row{
+    margin-top: 85px;
+    
+}
+
+.slide-text,
+.footer-text{
+    color: aquamarine;
+    margin: auto auto;
+}
+footer,
+.btn-primary{
+    margin-top: 6em;
+    background: linear-gradient(270deg, #021266 0%, #000000 94%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zvon-anim{
+    animation: myAnim 2s ease 0s 10 normal forwards;
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: space-between; /* Равномерное распределение */
+}
+
+.text-banner {
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: white; /* Белый текст */
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    max-width: 50%; /* Ограничиваем ширину текста */
+    
+}
+
+.text-banner h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text-banner p {
+    font-size: 18px;
+}
+
+.rounded-image {
+    margin-right: 20px;
+    border-radius: 15px; /* Округляем углы изображения */
+    max-width: 100%; /* Ограничиваем ширину изображения */
+     /* Автоматическая высота */
+}
+.image-section .content-wrapper {
+    display: flex; /* Располагаем элементы в одну строку */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    gap: 20px; /* Промежуток между картинкой и текстом */
+}
+
+.text-banner {
+    max-width: 40%; /* Ограничиваем ширину текста */
+}
+
+.rounded-image {
+    width: 1100px; /* Ширина картинки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 10px; /* Скругляем углы картинки */
+}
+
+hr.separator {
+    margin-top: 35px;
+    border: none;
+    height: 15px;
+    background-color: #ff0000;
+    width: 0%;
+    border-radius: 10px;
+    margin: 2em auto;
+    animation: pulse 2s infinite;
+}
+.textArm{
+    margin-top: 135px;
+}
+/* Общие стили для карточек */
+.card {
+    border-radius: 15px; /* Радиус углов для карточек */
+    overflow: hidden; /* Чтобы не вылезали элементы за пределы карточки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при наведении */
+}
+
+/* Радиус углов для изображения */
+.card-img-top {
+    border-radius: 15px 15px 0 0; /* Скругляем верхние углы изображения */
+    transition: opacity 0.3s ease;
+}
+
+.card-img-top:hover {
+    opacity: 0.8; /* Применяем эффект затемнения при наведении */
+}
+
+/* Стили для текста внутри карточки */
+.card-body {
+    padding: 20px;
+    background-color: #1b273a;
+}
+
+.card-body h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-body .card-text {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Стили для ссылок внутри карточки */
+.card-body a {
+    color: #b8d2ee; /* Цвет ссылок */
+    text-decoration: none;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        width: 92%;
+    }
+    50% {
+        width: 98%;
+    }
+    100% {
+        width: 92%;
+    }
+}
+
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+@media(max-width: 755px){
+    .carousel-item {
+        display: none;
+    }
+}

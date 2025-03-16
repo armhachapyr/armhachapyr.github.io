@@ -1,0 +1,26 @@
+.nasText {
+    position: absolute;
+    top: 85%; 
+    left: 85%; 
+    transform: translate(-50%, -50%); 
+    font-size: 70px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+.nasText p{
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+}
+.nadText {
+    position: absolute;
+    top: 18%; 
+    left: 17%; 
+    transform: translate(-50%, -50%); 
+    font-size: 70px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+.nadText p{
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+}
